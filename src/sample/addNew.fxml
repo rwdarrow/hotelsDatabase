@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="462.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.addNewController">
+   <children>
+      <TextField fx:id="nameField" layoutX="34.0" layoutY="42.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="addressField" layoutX="34.0" layoutY="93.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cityField" layoutX="34.0" layoutY="148.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel city">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="stateField" layoutX="34.0" layoutY="198.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel state">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="postalCodeField" layoutX="34.0" layoutY="254.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel postal code">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="countryField" layoutX="34.0" layoutY="306.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel country">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="websiteField" layoutX="34.0" layoutY="356.0" prefHeight="30.0" prefWidth="299.0" promptText="Enter hotel website URL">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="submitButton" layoutX="133.0" layoutY="415.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="200.0" text="Submit">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="starSelector" layoutX="34.0" layoutY="418.0" prefHeight="25.0" prefWidth="77.0" promptText="Stars" visibleRowCount="9">
+       <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:id="one" fx:value="1" />
+               <String fx:id="oneHalf" fx:value="1.5" />
+               <String fx:id="two" fx:value="2" />
+               <String fx:id="twoHalf" fx:value="2.5" />
+               <String fx:id="three" fx:value="3" />
+               <String fx:id="threeHalf" fx:value="3.5" />
+               <String fx:id="four" fx:value="4" />
+               <String fx:id="fourHalf" fx:value="4.5" />
+               <String fx:id="five" fx:value="5" />
+           </FXCollections>
+       </items>
+      </ComboBox>
+      <Button layoutY="2.0" mnemonicParsing="false" onAction="#back" text="&lt; Back" />
+   </children>
+</AnchorPane>
