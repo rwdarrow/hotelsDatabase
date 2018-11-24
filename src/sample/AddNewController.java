@@ -1,5 +1,15 @@
+/**
+ * Name: AddNewController.java
+ * Author: Robert Darrow
+ * Description: A controller class for the add new hotel scene
+ */
+
 package sample;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,12 +20,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
-
-public class addNewController {
+public class AddNewController {
   @FXML
   private TextField nameField;
 
@@ -40,8 +45,11 @@ public class addNewController {
   @FXML
   private ComboBox starSelector;
 
-  private final String DATABASE_URL = "jdbc:derby:lib/hotels";
+  private static final String DATABASE_URL = "jdbc:derby:lib/hotels";
 
+  /**
+   * Description: creates a new hotel object based on text entered into fields.
+   */
   public void submit() {
     double stars;
 
@@ -62,29 +70,41 @@ public class addNewController {
     String website = websiteField.getText();
 
     // make sure all the fields have been filled in
-    if (stars != 0 && !name.equals("") && !address.equals("") && !city.equals("") && !state.equals("") &&
-        !postalCode.equals("") && !country.equals("") && !website.equals("")) {
+    if (stars != 0 && !name.equals("") && !address.equals("") && !city.equals("")
+        && !state.equals("") && !postalCode.equals("") && !country.equals("")
+        && !website.equals("")) {
       // create a hotel object based on these values
       Hotel hotel = new Hotel(name, stars, address, city, state, postalCode, country, website);
       addToDatabase(hotel);
     }
   }
 
+  /**
+   * Adds data from hotel object to the database.
+   * @param hotel the hotel object to extract data from
+   */
   private void addToDatabase(Hotel hotel) {
     // insert values extracted from hotel object into database
-    final String ADD_QUERY = "INSERT INTO hotels VALUES " + hotel.toDatabaseQueryString();
+    String insertQuery = "INSERT INTO hotels VALUES " + hotel.toDatabaseQueryString();
 
     // use try-with-resources to connect to and query the database
     try {
       Connection connection = DriverManager.getConnection(DATABASE_URL);
       Statement statement = connection.createStatement();
-      statement.executeUpdate(ADD_QUERY);
+      statement.executeUpdate(insertQuery);
+      statement.close();
+      connection.close();
     } catch (SQLException e) {
       e.printStackTrace();
     }
   }
 
-  public void back(ActionEvent event) throws Exception{
+  /**
+   * Changes scene to hotel viewer scene.
+   * @param event the mouse event this method listens for
+   * @throws Exception any exception is this method may throw
+   */
+  public void back(ActionEvent event) throws Exception {
     Parent viewerParent = FXMLLoader.load(getClass().getResource("hotelViewer.fxml"));
     Scene viewerScene = new Scene(viewerParent);
 
