@@ -1,7 +1,7 @@
 /**
- * Name: AddNewController.java
+ * Name: Main.java
  * Author: Robert Darrow
- * Description: A controller class for the add new hotel scene
+ * Description: Main start class for JavaFX application
  */
 
 package sample;
