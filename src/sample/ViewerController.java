@@ -1,7 +1,7 @@
 /**
- * Name: AddNewController.java
+ * Name: ViewerController.java
  * Author: Robert Darrow
- * Description: A controller class for the hotel viewer scene
+ * Description: A controller class for the hotel viewer scene.
  */
 
 package sample;

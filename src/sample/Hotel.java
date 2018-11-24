@@ -1,7 +1,7 @@
 /**
- * Name: AddNewController.java
+ * Name: Hotel.java
  * Author: Robert Darrow
- * Description: A controller class for the add new hotel scene
+ * Description: Class describing a hotel object.
  */
 
 package sample;
