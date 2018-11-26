@@ -10,87 +10,87 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="757.0" prefWidth="1735.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewerController">
+<AnchorPane prefHeight="757.0" prefWidth="1735.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewerController">
    <children>
-      <Label fx:id="hotelName" layoutX="1016.0" layoutY="22.0" text="Hotel Name" textOverrun="CLIP">
+      <Label fx:id="hotelName" layoutX="1016.0" layoutY="22.0" stylesheets="@style.css" text="Hotel Name" textOverrun="CLIP">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <Label layoutX="1025.0" layoutY="476.0" text="Stars:">
+      <Label layoutX="1025.0" layoutY="476.0" stylesheets="@style.css" text="Stars:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1025.0" layoutY="511.0" text="Address:">
+      <Label layoutX="1025.0" layoutY="511.0" stylesheets="@style.css" text="Address:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1025.0" layoutY="670.0" text="Website:">
+      <Label layoutX="1025.0" layoutY="670.0" stylesheets="@style.css" text="Website:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1025.0" layoutY="541.0" text="City:">
+      <Label layoutX="1025.0" layoutY="541.0" stylesheets="@style.css" text="City:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1024.0" layoutY="574.0" text="Zip code:">
+      <Label layoutX="1024.0" layoutY="574.0" stylesheets="@style.css" text="Zip code:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1025.0" layoutY="605.0" text="State:">
+      <Label layoutX="1025.0" layoutY="605.0" stylesheets="@style.css" text="State:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="1025.0" layoutY="635.0" text="Country:">
+      <Label layoutX="1025.0" layoutY="635.0" stylesheets="@style.css" text="Country:">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <Button layoutX="1020.0" layoutY="710.0" mnemonicParsing="false" onAction="#addNewEntry" prefHeight="25.0" prefWidth="218.0" text="Add New" />
-      <Label fx:id="stars" layoutX="1072.0" layoutY="476.0" text="0">
+      <Label fx:id="stars" layoutX="1072.0" layoutY="476.0" stylesheets="@style.css" text="0">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="address" layoutX="1097.0" layoutY="511.0" text="1234 Sample St">
+      <Label fx:id="address" layoutX="1097.0" layoutY="511.0" stylesheets="@style.css" text="1234 Sample St">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="city" layoutX="1073.0" layoutY="541.0" text="Sample City">
+      <Label fx:id="city" layoutX="1073.0" layoutY="541.0" stylesheets="@style.css" text="Sample City">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="zipCode" layoutX="1097.0" layoutY="574.0" text="12345">
+      <Label fx:id="zipCode" layoutX="1097.0" layoutY="574.0" stylesheets="@style.css" text="12345">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="state" layoutX="1073.0" layoutY="605.0" text="Sample State">
+      <Label fx:id="state" layoutX="1073.0" layoutY="605.0" stylesheets="@style.css" text="Sample State">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="country" layoutX="1084.0" layoutY="635.0" text="Sample Country">
+      <Label fx:id="country" layoutX="1084.0" layoutY="635.0" stylesheets="@style.css" text="Sample Country">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="website" layoutX="1090.0" layoutY="670.0" prefHeight="20.0" text="www.samplehotelwebsite.com">
+      <Label fx:id="website" layoutX="1090.0" layoutY="670.0" prefHeight="20.0" stylesheets="@style.css" text="www.samplehotelwebsite.com">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
       <StackPane layoutX="25.0" layoutY="22.0" prefHeight="713.0" prefWidth="948.0">
          <children>
-            <TableView fx:id="hotelTable" prefHeight="713.0" prefWidth="968.0">
+            <TableView fx:id="hotelTable" prefHeight="713.0" prefWidth="968.0" stylesheets="@style.css">
                <columns>
                   <TableColumn fx:id="nameCol" prefWidth="193.0" text="Name" />
                   <TableColumn fx:id="starCol" minWidth="0.0" prefWidth="42.0" text="Stars" />
@@ -105,7 +105,7 @@
          </children>
       </StackPane>
       <Button layoutX="1272.0" layoutY="710.0" mnemonicParsing="false" onAction="#removeEntry" prefHeight="25.0" prefWidth="218.0" text="Remove Entry" />
-      <ImageView fitHeight="409.0" fitWidth="524.0" layoutX="1016.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="403.0" fitWidth="451.0" layoutX="1016.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../images/default/defaultImg.jpg" />
          </image>
