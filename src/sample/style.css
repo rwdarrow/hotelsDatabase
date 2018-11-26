@@ -16,3 +16,10 @@
     -fx-text-fill: white;
     -fx-font-style: italic;
 }
+.table-row-cell {
+    -fx-background-color: #fff3b5;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #d1e2ff;
+}
