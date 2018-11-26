@@ -107,7 +107,7 @@
       <Button layoutX="1272.0" layoutY="710.0" mnemonicParsing="false" onAction="#removeEntry" prefHeight="25.0" prefWidth="218.0" text="Remove Entry" />
       <ImageView fitHeight="403.0" fitWidth="451.0" layoutX="1016.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/default/defaultImg.jpg" />
+            <Image url="@defaultImg.jpg" />
          </image>
       </ImageView>
    </children>
