@@ -4,3 +4,4 @@ GUI DESIGN PRINCIPLES: The layout is intended to be simple. The table in the lef
 
 OPERATION: To view hotel information, simply select a hotel in the table by clicking on it. The information on the side will update automatically. To add a new hotel, click "Add New" at the bottom and fill in all the fields, and presss "submit." You will return to the previous screen and the new entry will be visible on the table. To remove an entry, simply click the "remove entry" button and the entry will be removed from the table. 
 
+![alt text](https://i.imgur.com/EU0Y7Ik.gif)
