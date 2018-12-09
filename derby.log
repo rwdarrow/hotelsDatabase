@@ -1,8 +1,8 @@
 ----------------------------------------------------------------
-Sun Nov 25 20:43:57 EST 2018:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0167-4daf-f7b5-000006e19bd0 
-on database directory C:\Users\Robbie\Dropbox\COP 3003\hotelsDatabase\lib\hotels with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
-Loaded from file:/C:/Users/Robbie/Dropbox/COP%203003/hotelsDatabase/lib/derby.jar
+Sun Dec 09 01:23:07 EST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0167-91a2-3b33-000005cfb218 
+on database directory C:\Users\Robbie\Dropbox\COP 3003\hotelsDatabase\lib\hotels with class loader sun.misc.Launcher$AppClassLoader@42a57993 
+Loaded from file:/C:/Users/Robbie/Dropbox/COP%203003/hotelsDatabase/out/artifacts/hotelsDatabase_jar/hotelsDatabase.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_112-b15
 user.dir=C:\Users\Robbie\Dropbox\COP 3003\hotelsDatabase
