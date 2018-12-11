@@ -50,7 +50,7 @@ public class AddNewController {
   /**
    * Description: creates a new hotel object based on text entered into fields.
    */
-  public void submit() {
+  public void submit(ActionEvent event) throws Exception {
     double stars;
 
     // make sure the user has selected a value for stars
@@ -76,6 +76,8 @@ public class AddNewController {
       // create a hotel object based on these values
       Hotel hotel = new Hotel(name, stars, address, city, state, postalCode, country, website);
       addToDatabase(hotel);
+
+      back(event); // go back to the previous screen
     }
   }
 
